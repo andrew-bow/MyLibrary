@@ -1,5 +1,7 @@
-package org.library.main;
+package org.library.main.controller;
 
+import org.library.main.model.Person;
+import org.library.main.repository.PersonDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,6 +20,7 @@ public class PeopleController {
     public PeopleController(PersonDAO personDAO) {
         this.personDAO = personDAO;
     }
+
 
     @GetMapping()
     public String index(Model model) {

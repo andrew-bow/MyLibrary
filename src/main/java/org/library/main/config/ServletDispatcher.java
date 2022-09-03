@@ -1,4 +1,4 @@
-package ru.alishev.springcourse.config;
+package org.library.main.config;
 
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
@@ -48,4 +48,5 @@ public class ServletDispatcher extends AbstractAnnotationConfigDispatcherServlet
         FilterRegistration.Dynamic characterEncoding = aContext.addFilter("characterEncoding", characterEncodingFilter);
         characterEncoding.addMappingForUrlPatterns(dispatcherTypes, true, "/*");
     }
+
 }
