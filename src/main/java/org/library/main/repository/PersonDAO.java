@@ -3,6 +3,7 @@ package org.library.main.repository;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.library.main.model.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -22,8 +23,8 @@ public class PersonDAO {
     }
 
     @Transactional(readOnly = true)
-    public List<Person> index(){
-    Session session = sessionFactory.getCurrentSession();
+    public List<Person> index() {
+        Session session = sessionFactory.getCurrentSession();
         return session.createQuery("select p from Person p", Person.class).
                 getResultList();
     }
@@ -53,6 +54,12 @@ public class PersonDAO {
         Session session = sessionFactory.getCurrentSession();
         session.remove(session.get(Person.class, id));
     }
-
+    @Transactional
+    public List<Book> getBookByPersonId(int id) {
+        Session session = sessionFactory.getCurrentSession();
+        return session.createQuery("select b from Book b where b.person_id = :id", Book.class)
+                .setParameter("id", id)
+                .getResultList();
+    }
 
 }

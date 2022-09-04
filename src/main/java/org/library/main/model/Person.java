@@ -17,6 +17,7 @@ public class Person  {
     @Column(name = "dob")
     private int dob;
 
+
     public Person(){}
 
     public Person(String fullName, int dob) {

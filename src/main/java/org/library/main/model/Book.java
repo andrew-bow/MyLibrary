@@ -1,6 +1,11 @@
 package org.library.main.model;
 
 import javax.persistence.*;
+import java.util.List;
+
+
+
+
 
 @Entity
 @Table(name = "Book")
@@ -22,17 +27,27 @@ public class Book {
 
     @ManyToOne
     @JoinColumn(name = "person_id")
-    private Person person;
+    private  Person person_id;
+
+    public Person getPerson_id() {
+        return person_id;
+    }
+
+    public void setPerson_id(Person person_id) {
+        this.person_id = person_id;
+    }
+
 
     public Book(){
 
     }
 
-    public Book(String name, String author, int releaseData, Person person) {
+    public Book(String name, String author, int releaseData ) {
         this.name = name;
         this.author = author;
         this.releaseData = releaseData;
-        this.person = person;
+
+
     }
 
     public int getId() {
@@ -67,15 +82,11 @@ public class Book {
         this.releaseData = releaseData;
     }
 
-    public Person getPerson() {
-        return person;
-    }
 
 
 
-    public void setPerson(Person person) {
-        this.person = person;
-    }
+
+
 
     @Override
     public String toString() {
@@ -84,7 +95,6 @@ public class Book {
                 ", name='" + name + '\'' +
                 ", author='" + author + '\'' +
                 ", releaseData=" + releaseData +
-                ", person=" + person +
                 '}';
     }
 }
