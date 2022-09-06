@@ -9,20 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd8f4aed-278c-44e5-960b-2f146004d7a4" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/new.html" afterDir="false" />
+    <list default="true" id="bd8f4aed-278c-44e5-960b-2f146004d7a4" name="Changes" comment="added functionality:&#10;Page of a book showing the values of the margins of that book and the person's name,&#10;who took this book.&#10;A man's page showing the man's fields of meaning, and the book he borrowed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/library/main/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/main/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/main/controller/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/main/controller/PeopleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/main/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/main/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/main/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/main/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/library/main/repository/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/main/repository/BookDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/library/main/repository/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/library/main/repository/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +73,6 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/andrew/IdeaProjects/MyLibrary&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
@@ -197,7 +188,8 @@
       <workItem from="1662146074678" duration="784000" />
       <workItem from="1662187748388" duration="15313000" />
       <workItem from="1662291338370" duration="8432000" />
-      <workItem from="1662304385263" duration="16172000" />
+      <workItem from="1662304385263" duration="16377000" />
+      <workItem from="1662446769024" duration="6213000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1662207627300</created>
@@ -206,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662207627300</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added functionality:&#10;Page of a book showing the values of the margins of that book and the person's name,&#10;who took this book.&#10;A man's page showing the man's fields of meaning, and the book he borrowed">
+      <created>1662321368486</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662321368486</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +225,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="added functionality:&#10;Page of a book showing the values of the margins of that book and the person's name,&#10;who took this book.&#10;A man's page showing the man's fields of meaning, and the book he borrowed" />
+    <option name="LAST_COMMIT_MESSAGE" value="added functionality:&#10;Page of a book showing the values of the margins of that book and the person's name,&#10;who took this book.&#10;A man's page showing the man's fields of meaning, and the book he borrowed" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

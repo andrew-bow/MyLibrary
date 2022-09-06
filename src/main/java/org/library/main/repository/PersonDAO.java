@@ -57,7 +57,8 @@ public class PersonDAO {
     @Transactional
     public List<Book> getBookByPersonId(int id) {
         Session session = sessionFactory.getCurrentSession();
-        return session.createQuery("select b from Book b where b.person_id = :id", Book.class)
+        return session.createSQLQuery("select * from book where person_id = :id")
+                .addEntity(Book.class)
                 .setParameter("id", id)
                 .getResultList();
     }

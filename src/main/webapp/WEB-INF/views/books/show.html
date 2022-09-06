@@ -29,7 +29,7 @@
 
 
         <form th:method="GET" th:action="@{/books/{id}/edit(id=${book.getId()})}">
-            <input type="submit" value="Удалить"/>
+            <input type="submit" value="Редактировать"/>
         </form>
 
     <form th:method="DELETE" th:action="@{/books/{id}(id=${book.getId()})}">
